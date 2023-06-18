@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  cursor: none;
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#customCursor {
+    width: 360px;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+    cursor: none;
+    pointer-events: none;
+}
+
+.delete-rectangle {
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100px;
+    height: 10px;
+}
+
+#nuiContainer {
+    cursor: none;
+}
+
+#nuiWindow {
+  display: none;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background-color: rgba(9, 98, 133, 0.554);
+  border: 3px solid #000;
+  cursor: none;
+}
+
+#verticalLine {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    border-left: 4px solid black;
+}
+
+#horizontalLine {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-top: 4px solid black;
+}
+
+.brown-spot {
+  user-select: none;
+}
